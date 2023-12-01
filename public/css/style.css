@@ -1,0 +1,73 @@
+/* Example CSS */
+
+/* Color Scheme */
+:root {
+  --primary-color: #4a4e69;  /* A dark blue shade */
+  --secondary-color: #9a8c98; /* A soft purple shade */
+  --accent-color: #c9ada7;    /* A muted pink shade */
+  --text-color: #22223b;      /* Almost black for text */
+  --background-color: #f2e9e4; /* A light cream background */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 15px;
+}
+
+header a:hover {
+  color: var(--accent-color);
+}
+
+article {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button, .button {
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+}
+
+

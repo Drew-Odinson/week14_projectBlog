@@ -1,0 +1,29 @@
+{{!-- Use the main layout --}}
+{{!-- {{!< layout }} --}}
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <!-- Show Login or Logout depending on if the user is logged in -->
+      {{#if loggedIn}}
+        <li><a href="/logout">Logout</a></li>
+      {{else}}
+        <li><a href="/login">Login</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+  <h1>The Tech Blog</h1>
+</header>
+
+<main>
+  {{!-- Loop through blog posts and display them --}}
+  {{#each posts as |post|}}
+    <article>
+      <h2>{{post.title}}</h2>
+      <p>{{post.summary}}</p>
+      <p>Posted by {{post.author}} on {{post.date}}</p>
+    </article>
+  {{/each}}
+</main>
