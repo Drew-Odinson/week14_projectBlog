@@ -1,29 +1,32 @@
-require('dotenv').config();
+// require('dotenv').config();
 
-const developmentConfig = {
-  "username": process.env.DB_USER,
-  "password": process.env.DB_PW,
-  "database": process.env.DB_NAME,
-  "host": process.env.DB_HOST,
-  "dialect": "mysql"
-};
 
-// console.log(developmentConfig);
 
-module.exports = {
-  "development": developmentConfig,
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  }
-};
+
+// const developmentConfig = {
+//   "username": process.env.DB_USER,
+//   "password": process.env.DB_PW,
+//   "database": process.env.DB_NAME,
+//   "host": process.env.DB_HOST,
+//   "dialect": "mysql"
+// };
+
+// // console.log(developmentConfig);
+
+// module.exports = {
+//   "development": developmentConfig,
+//   "test": {
+//     "username": "root",
+//     "password": null,
+//     "database": "database_test",
+//     "host": "127.0.0.1",
+//     "dialect": "mysql"
+//   },
+//   "production": {
+//     "username": "root",
+//     "password": null,
+//     "database": "database_production",
+//     "host": "127.0.0.1",
+//     "dialect": "mysql"
+//   }
+// };

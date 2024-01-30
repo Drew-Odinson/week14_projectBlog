@@ -36,7 +36,6 @@ Post.init(
 );
 
 Post.associate = function(models) {
-  // Post belongs to User
   Post.belongsTo(models.User, {
     foreignKey: {
       allowNull: false

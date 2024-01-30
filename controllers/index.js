@@ -1,16 +1,13 @@
 const router = require('express').Router();
 
 // Import routes
+const apiRoutes = require('./api') 
 const homeRoutes = require('./homeRoutes')
-const blogRoutes = require('./blog-routes'); 
-const loginRoutes = require('./api/login-routes');
-const postRoutes = require('./api/post-routes');
-const dashboardRoutes = require('./dashboard-routes');
-const commentRoutes = require('./comment-routes');
-const apiRoutes = require('./api');
+const dashboardRoutes = require('./dashboardRoutes') 
+
 
 // Use the imported routes
-router.use('/', blogRoutes);
+router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/dashboard', dashboardRoutes);
 
